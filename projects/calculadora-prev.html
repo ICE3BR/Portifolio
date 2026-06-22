@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Calculadora de Benefícios Previdenciários | Gustavo Quinup</title>
+  <meta content="Calculadora de Benefícios Previdenciários — aplicação web full stack com Python, FastAPI e deploy em produção no Linux." name="description">
+  <link href="../assets/img/favicon.png" rel="icon">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="../assets/css/style.css" rel="stylesheet">
+  <style>
+    .tech-badge { display:inline-block; background:rgba(18,214,64,0.12); border:1px solid #12d640; color:#12d640; border-radius:20px; padding:4px 14px; margin:3px; font-size:0.85rem; font-weight:600; }
+    .btn-github { display:inline-flex; align-items:center; gap:8px; background:#12d640; color:#010e1b !important; font-weight:700; border-radius:6px; padding:10px 22px; text-decoration:none; font-size:0.95rem; transition:background 0.2s; }
+    .btn-github:hover { background:#0eb838; color:#010e1b !important; }
+    .btn-back { display:inline-flex; align-items:center; gap:6px; color:#12d640; text-decoration:none; font-size:0.9rem; margin-bottom:20px; }
+    .btn-back:hover { color:#0eb838; text-decoration:none; }
+    .section-label { color:#adb5bd; font-size:0.72rem; font-weight:700; text-transform:uppercase; letter-spacing:1.2px; margin-bottom:10px; margin-top:24px; }
+    .feature-item { display:flex; align-items:flex-start; gap:12px; margin-bottom:12px; }
+    .feature-item i { color:#12d640; font-size:1.2rem; margin-top:2px; flex-shrink:0; }
+    .feature-item p { color:#adb5bd; margin:0; font-size:0.9rem; }
+    .infra-badge { display:inline-block; background:rgba(18,214,64,0.08); border:1px solid rgba(18,214,64,0.25); color:#dee2e6; border-radius:6px; padding:6px 14px; margin:4px; font-size:0.85rem; }
+    .benefit-card { background:rgba(18,214,64,0.06); border:1px solid rgba(18,214,64,0.2); border-radius:8px; padding:12px 16px; margin-bottom:8px; display:flex; justify-content:space-between; align-items:center; }
+    .benefit-card .name { color:#dee2e6; font-size:0.9rem; }
+    .benefit-card .pct { color:#12d640; font-weight:700; font-size:1rem; }
+    .project-screenshots .screenshot-item img { border-radius:6px; border:1px solid rgba(18,214,64,0.25); cursor:pointer; transition:transform 0.2s, border-color 0.2s; width:100%; }
+    .project-screenshots .screenshot-item img:hover { transform:scale(1.02); border-color:#12d640; }
+    #portfolio-details { padding-top:20px; }
+  </style>
+</head>
+<body>
+<main id="main">
+  <div id="portfolio-details" class="portfolio-details">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 portfolio-info">
+
+          <a href="../index.html#portfolio" class="btn-back">
+            <i class="bx bx-arrow-back"></i> Voltar aos Projetos
+          </a>
+
+          <h2 style="color:#12d640">Calculadora de Benefícios Previdenciários <span style="display:inline-block; background:rgba(255,193,7,0.15); border:1px solid #ffc107; color:#ffc107; border-radius:4px; padding:3px 10px; font-size:0.78rem; font-weight:600; margin-left:8px; vertical-align:middle;">🔒 Privado</span></h2>
+          <p>Aplicação web full stack para liquidação de sentenças previdenciárias, inspirada no <em>Previdenciarista</em>. Calcula benefícios atrasados com correção monetária INPC, juros de mora conforme Manual da Justiça Federal, prescrição quinquenal, 13º salário proporcional e abatimentos. Geração de PDF profissional e API REST documentada com Swagger. Deploy em produção com Nginx + Systemd no Linux.</p>
+
+          <div class="section-label">Tech Stack</div>
+          <div class="mb-3">
+            <span class="tech-badge">Python</span>
+            <span class="tech-badge">FastAPI</span>
+            <span class="tech-badge">Pandas</span>
+            <span class="tech-badge">FPDF2</span>
+            <span class="tech-badge">Uvicorn</span>
+            <span class="tech-badge">HTML/CSS/JS</span>
+            <span class="tech-badge">Nginx</span>
+            <span class="tech-badge">Linux</span>
+            <span class="tech-badge">Systemd</span>
+            <span class="tech-badge">Swagger</span>
+          </div>
+
+          <!-- ================================================
+               SCREENSHOTS
+               Adicione as imagens em:
+               assets/img/project/details/calculadora-prev/
+               ================================================ -->
+          <!--
+          <div class="project-screenshots mb-4">
+            <div class="section-label">Screenshots</div>
+            <div class="row g-2">
+              <div class="col-md-6 screenshot-item">
+                <a href="../assets/img/project/details/calculadora-prev/screenshot-1.png"
+                   class="venobox" data-gall="project-gallery" title="Interface da calculadora">
+                  <img src="../assets/img/project/details/calculadora-prev/screenshot-1.png" alt="Interface">
+                </a>
+              </div>
+              <div class="col-md-6 screenshot-item">
+                <a href="../assets/img/project/details/calculadora-prev/screenshot-2.png"
+                   class="venobox" data-gall="project-gallery" title="PDF gerado">
+                  <img src="../assets/img/project/details/calculadora-prev/screenshot-2.png" alt="PDF gerado">
+                </a>
+              </div>
+            </div>
+          </div>
+          -->
+
+          <!-- ================================================
+               VÍDEO YOUTUBE / LOOM (opcional)
+               Substitua SEU_VIDEO_ID e descomente
+               ================================================ -->
+          <!--
+          <div class="project-video mb-4">
+            <div class="section-label">Demonstração em Vídeo</div>
+            <div class="ratio ratio-16x9">
+              <iframe src="https://www.youtube.com/embed/SEU_VIDEO_ID"
+                      title="Calculadora Previdenciária Demo"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen></iframe>
+            </div>
+          </div>
+          -->
+
+          <div class="section-label">Benefícios Suportados</div>
+          <div class="mb-4">
+            <div class="benefit-card">
+              <span class="name">Auxílio-Acidente</span>
+              <span class="pct">50% do salário de benefício</span>
+            </div>
+            <div class="benefit-card">
+              <span class="name">Auxílio-Doença</span>
+              <span class="pct">91% do salário de benefício</span>
+            </div>
+            <div class="benefit-card">
+              <span class="name">Aposentadorias</span>
+              <span class="pct">100% do salário de benefício</span>
+            </div>
+          </div>
+
+          <div class="section-label">Funcionalidades</div>
+          <div class="mb-4">
+            <div class="feature-item">
+              <i class="bx bx-calculator"></i>
+              <p><strong>Cálculo completo de benefícios atrasados</strong> desde a Data de Início do Benefício (DIB), com reajustes anuais automáticos conforme índices do INSS.</p>
+            </div>
+            <div class="feature-item">
+              <i class="bx bx-time"></i>
+              <p><strong>Prescrição quinquenal</strong> — considera apenas os 5 anos anteriores à data de ajuizamento.</p>
+            </div>
+            <div class="feature-item">
+              <i class="bx bx-trending-up"></i>
+              <p><strong>Correção monetária INPC/IBGE</strong> aplicada mensalmente sobre o período de competência.</p>
+            </div>
+            <div class="feature-item">
+              <i class="bx bx-percentage"></i>
+              <p><strong>Juros de mora conforme Manual da Justiça Federal</strong> — 1% a.m. até 06/2009, 0,5% a.m. até 04/2012, 0,4% a.m. (poupança) até 11/2021, 0% (SELIC) a partir de 12/2021.</p>
+            </div>
+            <div class="feature-item">
+              <i class="bx bx-gift"></i>
+              <p><strong>13º salário proporcional</strong> calculado automaticamente por competência.</p>
+            </div>
+            <div class="feature-item">
+              <i class="bx bx-minus-circle"></i>
+              <p><strong>Abatimentos dinâmicos</strong> — suporte a múltiplos valores já pagos administrativamente.</p>
+            </div>
+            <div class="feature-item">
+              <i class="bx bx-file"></i>
+              <p><strong>Geração de PDF profissional</strong> com memória de cálculo detalhada pronta para juntada processual.</p>
+            </div>
+            <div class="feature-item">
+              <i class="bx bx-code-alt"></i>
+              <p><strong>API REST documentada com Swagger</strong> em <code>/docs</code> — endpoints bem definidos e testáveis.</p>
+            </div>
+          </div>
+
+          <div class="section-label">Infraestrutura de Produção</div>
+          <div class="mb-4">
+            <span class="infra-badge"><i class="bx bx-server"></i> Nginx (reverse proxy — porta 80)</span>
+            <span class="infra-badge"><i class="bx bx-bolt-circle"></i> FastAPI + Uvicorn (porta 8000)</span>
+            <span class="infra-badge"><i class="bx bx-globe"></i> Servidor HTTP Python (frontend — porta 8080)</span>
+            <span class="infra-badge"><i class="bx bx-cog"></i> Systemd (dois serviços gerenciados)</span>
+            <span class="infra-badge"><i class="bx bxl-tux"></i> Linux / Ubuntu</span>
+          </div>
+
+          <div class="section-label">Sobre o Projeto</div>
+          <p>
+            Inspirada no <em>Previdenciarista</em>, esta aplicação automatiza a liquidação de sentenças previdenciárias — um processo que antes era realizado manualmente em planilhas e sujeito a erros de atualização monetária e de cálculo de juros.
+          </p>
+          <p>
+            O backend em Python + FastAPI expõe uma REST API que aplica os índices INPC oficiais armazenados localmente em <code>src/data/indices/</code>. O frontend em HTML/CSS/JS consome a API e exibe os resultados em tabela detalhada. O deploy em produção roda com dois serviços Systemd (API e frontend) atrás do Nginx.
+          </p>
+
+          <div class="mt-4" style="background:rgba(255,193,7,0.08); border:1px solid rgba(255,193,7,0.3); border-radius:8px; padding:14px 18px;">
+            <p style="color:#ffc107; margin:0; font-size:0.9rem;">
+              <i class="bx bx-lock-alt"></i> <strong>Repositório privado</strong> — sistema em produção com dados sensíveis de clientes. Para solicitar uma demonstração ou mais detalhes, entre em <a href="../index.html#contacts" style="color:#12d640;">contato</a>.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<script src="../assets/vendor/jquery/jquery.min.js"></script>
+<script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/vendor/venobox/venobox.min.js"></script>
+<script>$(document).ready(function(){ $('.venobox').venobox(); });</script>
+</body>
+</html>

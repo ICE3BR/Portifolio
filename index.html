@@ -477,12 +477,15 @@
   <!-- Start Skills Section -->
 
   <style>
-    .skill-group { margin-top:12px; display:flex; flex-direction:column; gap:10px; }
-    .skill-tier { display:flex; align-items:center; gap:12px; }
+    .skill-group { margin-top:12px; display:flex; flex-direction:column; gap:8px; }
+    .skill-tier { display:flex; align-items:center; gap:12px; border-radius:8px; padding:10px 14px; }
+    .skill-tier.adv { background:rgba(18,214,64,0.07);  border:1px solid rgba(18,214,64,0.2); }
+    .skill-tier.int { background:rgba(255,193,7,0.07);  border:1px solid rgba(255,193,7,0.2); }
+    .skill-tier.bas { background:rgba(108,117,125,0.07); border:1px solid rgba(108,117,125,0.2); }
     .skill-tier-label { min-width:110px; flex-shrink:0; font-size:0.75rem; font-weight:700; text-transform:uppercase; letter-spacing:0.6px; padding-left:8px; white-space:nowrap; }
-    .skill-tier-label.adv  { color:#12d640; border-left:3px solid #12d640; }
-    .skill-tier-label.int  { color:#ffc107; border-left:3px solid #ffc107; }
-    .skill-tier-label.bas  { color:#6c757d; border-left:3px solid #6c757d; }
+    .skill-tier-label.adv { color:#12d640; border-left:3px solid #12d640; }
+    .skill-tier-label.int { color:#ffc107; border-left:3px solid #ffc107; }
+    .skill-tier-label.bas { color:#6c757d; border-left:3px solid #6c757d; }
     .skill-tier-logos { display:flex; flex-wrap:wrap; align-items:center; gap:6px; min-width:0; overflow:hidden; }
     .skill-tier-logos img { height:40px; max-width:130px; object-fit:contain; flex-shrink:0; }
     @media (max-width:575px) {
@@ -502,14 +505,14 @@
           <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
             <h4 style="text-align:left;color:#dee2e6">Linguagens &amp; Dados</h4>
             <div class="skill-group">
-              <div class="skill-tier">
+              <div class="skill-tier adv">
                 <span class="skill-tier-label adv">Avançado</span>
                 <div class="skill-tier-logos">
                   <img src="https://www.vectorlogo.zone/logos/python/python-horizontal.svg" alt="Python">
                   <img src="https://www.vectorlogo.zone/logos/mysql/mysql-horizontal.svg" alt="MySQL/MariaDB">
                 </div>
               </div>
-              <div class="skill-tier">
+              <div class="skill-tier int">
                 <span class="skill-tier-label int">Intermediário</span>
                 <div class="skill-tier-logos">
                   <img src="https://www.vectorlogo.zone/logos/javascript/javascript-ar21.svg" alt="JavaScript">
@@ -518,7 +521,7 @@
                   <img src="https://www.vectorlogo.zone/logos/postgresql/postgresql-ar21.svg" alt="PostgreSQL">
                 </div>
               </div>
-              <div class="skill-tier">
+              <div class="skill-tier bas">
                 <span class="skill-tier-label bas">Básico</span>
                 <div class="skill-tier-logos">
                   <img src="https://www.vectorlogo.zone/logos/mongodb/mongodb-ar21.svg" alt="MongoDB">
@@ -530,7 +533,7 @@
           <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
             <h4 style="text-align:left;color:#dee2e6">Tecnologias &amp; Ferramentas</h4>
             <div class="skill-group">
-              <div class="skill-tier">
+              <div class="skill-tier adv">
                 <span class="skill-tier-label adv">Avançado</span>
                 <div class="skill-tier-logos">
                   <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-ar21.svg" alt="Git">
@@ -539,7 +542,7 @@
                   <img src="https://www.vectorlogo.zone/logos/linux/linux-ar21.svg" alt="Linux">
                 </div>
               </div>
-              <div class="skill-tier">
+              <div class="skill-tier int">
                 <span class="skill-tier-label int">Intermediário</span>
                 <div class="skill-tier-logos">
                   <img src="https://www.vectorlogo.zone/logos/docker/docker-ar21.svg" alt="Docker">
@@ -547,7 +550,7 @@
                   <img src="https://www.vectorlogo.zone/logos/jupyter/jupyter-ar21.svg" alt="Jupyter">
                 </div>
               </div>
-              <div class="skill-tier">
+              <div class="skill-tier bas">
                 <span class="skill-tier-label bas">Básico</span>
                 <div class="skill-tier-logos">
                   <img src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-ar21.svg" alt="Google Cloud">
@@ -558,13 +561,13 @@
           <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
             <h4 style="text-align:left;color:#dee2e6">Frameworks &amp; Bibliotecas</h4>
             <div class="skill-group">
-              <div class="skill-tier">
+              <div class="skill-tier adv">
                 <span class="skill-tier-label adv">Avançado</span>
                 <div class="skill-tier-logos">
                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original-wordmark.svg" alt="FastAPI" style="max-width:50px; height:44px;">
                 </div>
               </div>
-              <div class="skill-tier">
+              <div class="skill-tier int">
                 <span class="skill-tier-label int">Intermediário</span>
                 <div class="skill-tier-logos">
                   <img src="https://www.vectorlogo.zone/logos/djangoproject/djangoproject-ar21.svg" alt="Django">
@@ -572,7 +575,7 @@
                   <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="Scikit-learn" style="max-width:70px;">
                 </div>
               </div>
-              <div class="skill-tier">
+              <div class="skill-tier bas">
                 <span class="skill-tier-label bas">Básico</span>
                 <div class="skill-tier-logos">
                   <img src="https://www.vectorlogo.zone/logos/nodejs/nodejs-horizontal.svg" alt="Node.js">

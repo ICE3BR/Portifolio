@@ -165,9 +165,9 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/* Hero-only: tighten nav spacing so 8 items fit comfortably */
+/* Hero-only: tighten nav spacing so 8 items fit on one line */
 #header:not(.header-top) .nav-menu li + li {
-  margin-left: 20px;
+  margin-left: 14px;
 }
 
 /* Hero-only: allow wrap if screen is narrow, with proper row gap */
@@ -428,19 +428,14 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/* Hero — sticky navbar overrides */
+/* Hero — sticky navbar overrides
+   display:contents removes the .hero-content box, making h1 + nav
+   direct flex children of .container — exactly like the original HTML */
 #header.header-top .hero-decorative {
   display: none !important;
 }
 #header.header-top .hero-content {
-  flex: 1 1 100%;
-  max-width: 100%;
-  flex-direction: row;
-  display: flex;
-  align-items: center;
-}
-#header.header-top .hero-cta {
-  display: none;
+  display: contents;
 }
 
 /*--------------------------------------------------------------

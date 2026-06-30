@@ -751,6 +751,27 @@ result <span class="o">=</span> <span class="fn">build_solution</span>(
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <script>AOS.init({ duration: 600, once: true, offset: 50 });</script>
 
+  <!-- Scroll to Top -->
+  <button id="scroll-top" aria-label="Voltar ao topo">
+    <i class="bx bx-up-arrow-alt"></i>
+  </button>
+
+  <script>
+    (function() {
+      var btn = document.getElementById('scroll-top');
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 300) {
+          btn.classList.add('visible');
+        } else {
+          btn.classList.remove('visible');
+        }
+      });
+      btn.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    })();
+  </script>
+
 </body>
 
 </html>

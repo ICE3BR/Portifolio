@@ -140,27 +140,36 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 @media (min-width: 1200px) {
   #header .container {
-    position: relative; /* anchor for absolutely-positioned code block */
+    position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
   }
 
-  /* Content column: grows to fill all space except the code block area */
-  .hero-content {
-    flex: 1 1 auto;
-    max-width: calc(100% - 400px);
-    padding-right: 20px;
+  /* Nav items wrap to next line when they don't fit — never overflow into code block */
+  .hero-content .nav-menu > ul {
+    flex-wrap: wrap;
+    row-gap: 4px;
+    max-width: 100%;
   }
 
-  /* Code block floats absolutely on the right — zero impact on nav layout */
+  /* Content column: constrained so nav wraps before reaching code block */
+  .hero-content {
+    flex: 1 1 auto;
+    max-width: calc(100% - 380px);
+    padding-right: 24px;
+  }
+
+  /* Code block: absolutely positioned, never participates in nav layout flow
+     pointer-events: none guarantees nav links are always clickable */
   .hero-decorative {
     position: absolute;
     right: 0;
     top: 50%;
     transform: translateY(-50%);
-    width: 360px;
+    width: 340px;
     flex: none;
+    pointer-events: none;
   }
 }
 

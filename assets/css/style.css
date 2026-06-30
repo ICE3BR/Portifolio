@@ -138,7 +138,7 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Hero — 2-column layout
 --------------------------------------------------------------*/
-@media (min-width: 993px) {
+@media (min-width: 1200px) {
   #header .container {
     display: flex;
     flex-direction: row;
@@ -158,7 +158,7 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 40%;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1199px) {
   .hero-content {
     flex: 0 0 100%;
     max-width: 100%;
@@ -419,6 +419,21 @@ h1, h2, h3, h4, h5, h6 {
   #header.header-top h1 {
     font-size: 26px;
   }
+}
+
+/* Hero — sticky navbar overrides */
+#header.header-top .hero-decorative {
+  display: none !important;
+}
+#header.header-top .hero-content {
+  flex: 1 1 100%;
+  max-width: 100%;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+}
+#header.header-top .hero-cta {
+  display: none;
 }
 
 /*--------------------------------------------------------------

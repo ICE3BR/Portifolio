@@ -1,5 +1,5 @@
 # Personal Portfolio 🔥
-> ice3br.github.io/Portifolio/
+> https://me.gaqtech.dev/
 
 :star: Star me on GitHub — it helps!
 
@@ -70,6 +70,9 @@
 #### Step 3
 
 - 🔃 Create a new pull request.
+
+## Reference
+- [Prerak Raja](https://github.com/rajaprerak)
 
 ## License
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)

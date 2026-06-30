@@ -146,31 +146,49 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
   }
 
-  /* Nav items wrap to next line when they don't fit — never overflow into code block */
-  .hero-content .nav-menu > ul {
-    flex-wrap: wrap;
-    row-gap: 4px;
-    max-width: 100%;
-  }
-
-  /* Content column: constrained so nav wraps before reaching code block */
+  /* Content column: leaves room for the absolutely-positioned code block */
   .hero-content {
     flex: 1 1 auto;
-    max-width: calc(100% - 380px);
-    padding-right: 24px;
+    max-width: calc(100% - 340px);
+    padding-right: 20px;
   }
 
-  /* Code block: absolutely positioned, never participates in nav layout flow
-     pointer-events: none guarantees nav links are always clickable */
+  /* Code block floats on the right without affecting nav flow */
   .hero-decorative {
     position: absolute;
     right: 0;
     top: 50%;
     transform: translateY(-50%);
-    width: 340px;
+    width: 310px;
     flex: none;
     pointer-events: none;
   }
+}
+
+/* Hero-only: tighten nav spacing so 8 items fit comfortably */
+#header:not(.header-top) .nav-menu li + li {
+  margin-left: 20px;
+}
+
+/* Hero-only: allow wrap if screen is narrow, with proper row gap */
+#header:not(.header-top) .hero-content .nav-menu > ul {
+  flex-wrap: wrap;
+  row-gap: 10px;
+}
+
+/* Hero-only: reduce gap between nav and social icons when nav wraps */
+@media (min-width: 1200px) {
+  #header:not(.header-top) .social-links {
+    margin-top: 20px;
+  }
+}
+
+/* Sticky navbar: always single row, no wrapping */
+#header.header-top .nav-menu > ul {
+  flex-wrap: nowrap;
+}
+#header.header-top .nav-menu li + li {
+  margin-left: 18px;
 }
 
 @media (max-width: 1199px) {

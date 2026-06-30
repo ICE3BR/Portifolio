@@ -2,13 +2,29 @@
 <html lang="pt-BR">
 
 <head>
-  <!-- Google Tag Manager -->
+  <!-- ============================================================
+  Google Analytics & Tag Manager
+  AÇÃO PENDENTE: Configure suas propriedades em:
+    - Google Analytics: https://analytics.google.com
+    - Google Tag Manager: https://tagmanager.google.com
+  Depois substitua este comentário pelos snippets corretos.
+
+  Snippet GTM (substituir GTM-XXXXXXXX pelo seu Container ID):
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
   j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-MHM8F4J9');</script>
-  <!-- End Google Tag Manager -->
+  })(window,document,'script','dataLayer','GTM-XXXXXXXX');</script>
+
+  Snippet GA4 direto (alternativa ao GTM, substituir G-XXXXXXXXXX pelo Measurement ID):
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  ============================================================ -->
   <link rel="icon" type="image/png" href="/favicon.png"/>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -22,6 +38,9 @@
   <meta property="og:description" content="Portfólio de Gustavo Quinup, Engenheiro de Computação especializado em IA, Cloud e Dados.">
   <meta property="og:url" content="https://me.gaqtech.dev">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="https://me.gaqtech.dev/assets/img/profile_2026.jpeg">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#010e1b">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -37,22 +56,17 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-MHM8F4J9"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'GTM-MHM8F4J9');
-  </script>
+  <!-- AOS — Animate On Scroll -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
 </head>
 
 <body>
   
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MHM8F4J9"
+  <!-- GTM noscript: descomentar após configurar o Container ID acima
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXXX"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
+  -->
   <!-- ======= Header ======= -->
   <header id="header" class="header-tops">
 
@@ -198,7 +212,7 @@
         <div class="col-lg-12" data-aos="fade-up" style="display: inline-block;">
 
             <div class="col-md-4 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style="padding:0px 0px;padding-bottom: 5px;display: inline-block;">
-              <img src="assets/img/education/logo-anhanguera_horizontal.webp" class="img-fluid" alt="Universidade Anhanguera">
+              <img src="assets/img/education/logo-anhanguera_horizontal.webp" class="img-fluid" alt="Universidade Anhanguera" loading="lazy">
               <p style="text-align:left;color:#fff;padding: 5px 10px;"><em>Bacharelado em Engenharia da Computação</em></p>
               <h5 style="text-align:left;padding: 0px 10px;">Janeiro 2022 – Previsão 2026 <span style="color:#12d640">(9º Semestre)</span></h5>
               <h6 style="text-align:left;color:#fff;padding: 0px 10px;">Disciplinas Relevantes</h6>
@@ -211,7 +225,7 @@
               </ul>
             </div>
             <div class="col-md-4 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style="padding:0px 0px;padding-bottom: 5px;display: inline-block;">
-              <img src="assets/img/education/colegio_dominante.png" class="img-fluid" alt="Colégio Dominante">
+              <img src="assets/img/education/colegio_dominante.png" class="img-fluid" alt="Colégio Dominante" loading="lazy">
               <p style="text-align:left;color:#fff;padding: 5px 10px;"><em>Ensino Médio Completo</em></p>
               <h5 style="text-align:left;padding: 0px 10px;">Janeiro 2019 – Dezembro 2021</h5>
             </div>
@@ -230,7 +244,7 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-app" style="position: absolute; left: 0px; top: 0px;">
           <div class="portfolio-wrap">
-            <img src="assets/img/certification/dio_logo.png" class="img-fluid" alt="DIO">
+            <img src="assets/img/certification/dio_logo.png" class="img-fluid" alt="DIO" loading="lazy">
             <div class="portfolio-info">
               <h4>Azure AI</h4>
               <div class="portfolio-links">
@@ -242,7 +256,7 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-app" style="position: absolute; left: 370px; top: 0px;">
           <div class="portfolio-wrap">
-            <img src="assets/img/certification/dio_logo.png" class="img-fluid" alt="DIO">
+            <img src="assets/img/certification/dio_logo.png" class="img-fluid" alt="DIO" loading="lazy">
             <div class="portfolio-info">
               <h4>Banco de Dados</h4>
               <div class="portfolio-links">
@@ -254,7 +268,7 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-project" style="position: absolute; left: 370px; top: 218.875px;">
           <div class="portfolio-wrap">
-            <img src="assets/img/certification/dio_logo.png" class="img-fluid" alt="DIO">
+            <img src="assets/img/certification/dio_logo.png" class="img-fluid" alt="DIO" loading="lazy">
             <div class="portfolio-info">
               <h4>Machine Learning com Python</h4>
               <div class="portfolio-links">
@@ -345,7 +359,7 @@
         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
           <div class="text-center"><h4>IA Data Analysis</h4></div>
           <div class="portfolio-wrap">
-            <img src="assets/img/project/gan.jpg" class="img-fluid" alt="">
+            <img src="assets/img/project/gan.jpg" class="img-fluid" alt="" loading="lazy">
             <div class="portfolio-info">
               
               <div class="portfolio-links">
@@ -358,7 +372,7 @@
         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
           <div class="text-center"><h4>Chatbot IA</h4></div>
           <div class="portfolio-wrap">
-            <img src="assets/img/project/resume.jpg" class="img-fluid" alt="">
+            <img src="assets/img/project/resume.jpg" class="img-fluid" alt="" loading="lazy">
             <div class="portfolio-info">
               
               <div class="portfolio-links">
@@ -371,7 +385,7 @@
         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
           <div class="text-center"><h4>Downloader de Vídeos</h4></div>
           <div class="portfolio-wrap">
-            <img src="assets/img/project/musicplayer.jpg" class="img-fluid" alt="">
+            <img src="assets/img/project/musicplayer.jpg" class="img-fluid" alt="" loading="lazy">
             <div class="portfolio-info">
               
               <div class="portfolio-links">
@@ -384,7 +398,7 @@
         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
           <div class="text-center"><h4>Gerador de QR Code</h4></div>
           <div class="portfolio-wrap">
-            <img src="assets/img/project/recommender.jpg" class="img-fluid" alt="">
+            <img src="assets/img/project/recommender.jpg" class="img-fluid" alt="" loading="lazy">
             <div class="portfolio-info">
               
               <div class="portfolio-links">
@@ -397,7 +411,7 @@
         <div class="col-lg-4 col-md-6 portfolio-item filter-project">
           <div class="text-center"><h4>Busca CEP</h4></div>
           <div class="portfolio-wrap">
-            <img src="assets/img/project/iras.jpeg" class="img-fluid" alt="">
+            <img src="assets/img/project/iras.jpeg" class="img-fluid" alt="" loading="lazy">
             <div class="portfolio-info">
               <div class="portfolio-links">
                 <a href="projects/searchcep.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Detalhes do Projeto"><i class="bx bx-info-circle"></i></a>
@@ -409,7 +423,7 @@
         <div class="col-lg-4 col-md-6 portfolio-item filter-project">
           <div class="text-center"><h4>Processador de Imagens</h4></div>
           <div class="portfolio-wrap">
-            <img src="assets/img/project/vdg.jpg" class="img-fluid" alt="">
+            <img src="assets/img/project/vdg.jpg" class="img-fluid" alt="" loading="lazy">
             <div class="portfolio-info">
               <div class="portfolio-links">
                 <a href="projects/imageprocessor.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Detalhes do Projeto"><i class="bx bx-info-circle"></i></a>
@@ -421,7 +435,7 @@
         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
           <div class="text-center"><h4>Analisador de Documentos</h4></div>
           <div class="portfolio-wrap">
-            <img src="assets/img/project/ml.jpg" class="img-fluid" alt="">
+            <img src="assets/img/project/ml.jpg" class="img-fluid" alt="" loading="lazy">
             <div class="portfolio-info">
               <div class="portfolio-links">
                 <a href="projects/documentanalyzer.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Detalhes do Projeto"><i class="bx bx-info-circle"></i></a>
@@ -433,7 +447,7 @@
         <div class="col-lg-4 col-md-6 portfolio-item filter-project">
           <div class="text-center"><h4>Monitor de Preços</h4></div>
           <div class="portfolio-wrap">
-            <img src="assets/img/project/gan.jpg" class="img-fluid" alt="">
+            <img src="assets/img/project/gan.jpg" class="img-fluid" alt="" loading="lazy">
             <div class="portfolio-info">
               <div class="portfolio-links">
                 <a href="projects/lowpriceservice.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Detalhes do Projeto"><i class="bx bx-info-circle"></i></a>
@@ -445,7 +459,7 @@
         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
           <div class="text-center"><h4>Legal-HUB</h4></div>
           <div class="portfolio-wrap">
-            <img src="assets/img/project/ml.jpg" class="img-fluid" alt="Legal-HUB">
+            <img src="assets/img/project/ml.jpg" class="img-fluid" alt="Legal-HUB" loading="lazy">
             <div class="portfolio-info">
               <div class="portfolio-links">
                 <a href="projects/legalhub.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Detalhes do Projeto"><i class="bx bx-info-circle"></i></a>
@@ -457,7 +471,7 @@
         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
           <div class="text-center"><h4>Calculadora Previdenciária</h4></div>
           <div class="portfolio-wrap">
-            <img src="assets/img/project/resume.jpg" class="img-fluid" alt="Calculadora Previdenciária">
+            <img src="assets/img/project/resume.jpg" class="img-fluid" alt="Calculadora Previdenciária" loading="lazy">
             <div class="portfolio-info">
               <div class="portfolio-links">
                 <a href="projects/calculadora-prev.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Detalhes do Projeto"><i class="bx bx-info-circle"></i></a>
@@ -469,7 +483,7 @@
         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
           <div class="text-center"><h4>LLM Translate Extension</h4></div>
           <div class="portfolio-wrap">
-            <img src="assets/img/project/llm-translate.png" class="img-fluid" alt="LLM Translate Extension" style="object-fit:contain; background:#09203a;">
+            <img src="assets/img/project/llm-translate.png" class="img-fluid" alt="LLM Translate Extension" style="object-fit:contain; background:#09203a;" loading="lazy">
             <div class="portfolio-info">
               <div class="portfolio-links">
                 <a href="projects/llm-translate.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Detalhes do Projeto"><i class="bx bx-info-circle"></i></a>
@@ -704,6 +718,10 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- AOS Init -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init({ duration: 600, once: true, offset: 50 });</script>
 
 </body>
 

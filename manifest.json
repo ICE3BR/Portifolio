@@ -1,0 +1,16 @@
+{
+  "name": "Gustavo Quinup — Portfólio",
+  "short_name": "GAQ Dev",
+  "description": "Portfólio de Gustavo Quinup, Engenheiro de Computação especializado em IA, Cloud e Dados.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#010e1b",
+  "theme_color": "#010e1b",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "any",
+      "type": "image/png"
+    }
+  ]
+}

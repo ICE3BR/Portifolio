@@ -2,13 +2,29 @@
 <html lang="pt-BR">
 
 <head>
-  <!-- Google Tag Manager -->
+  <!-- ============================================================
+  Google Analytics & Tag Manager
+  AÇÃO PENDENTE: Configure suas propriedades em:
+    - Google Analytics: https://analytics.google.com
+    - Google Tag Manager: https://tagmanager.google.com
+  Depois substitua este comentário pelos snippets corretos.
+
+  Snippet GTM (substituir GTM-XXXXXXXX pelo seu Container ID):
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
   j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-MHM8F4J9');</script>
-  <!-- End Google Tag Manager -->
+  })(window,document,'script','dataLayer','GTM-XXXXXXXX');</script>
+
+  Snippet GA4 direto (alternativa ao GTM, substituir G-XXXXXXXXXX pelo Measurement ID):
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  ============================================================ -->
   <link rel="icon" type="image/png" href="/favicon.png"/>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -22,6 +38,9 @@
   <meta property="og:description" content="Portfólio de Gustavo Quinup, Engenheiro de Computação especializado em IA, Cloud e Dados.">
   <meta property="og:url" content="https://me.gaqtech.dev">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="https://me.gaqtech.dev/assets/img/profile_2026.jpeg">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#010e1b">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -37,51 +56,69 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-MHM8F4J9"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'GTM-MHM8F4J9');
-  </script>
+  <!-- AOS — Animate On Scroll -->
+  <link rel="stylesheet" href="assets/vendor/aos/aos.css">
+
 </head>
 
 <body>
   
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MHM8F4J9"
+  <!-- GTM noscript: descomentar após configurar o Container ID acima
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXXX"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
+  -->
   <!-- ======= Header ======= -->
-  <header id="header" class="header-tops">
+<header id="header" class="header-tops">
+  <div class="container">
 
-    <div class="container">
-
+    <!-- Coluna esquerda: conteúdo -->
+    <div class="hero-content">
       <h1><a href="index.html">Gustavo Quinup</a></h1>
       <h2 style="color:#fff">Sou <span class="typing" style="color:#12D640"></span></h2>
+
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li class="active"><a href="#header"> <span>Início</span></a></li>
+          <li class="active"><a href="#header"><span>Início</span></a></li>
           <li><a href="#about"><span>Sobre</span></a></li>
-          <li><a href="#education"> <span>Formação</span></a></li>
-          <li><a href="#experience"> <span>Experiência</span></a></li>
-          <li><a href="#portfolio"> <span>Projetos</span></a></li>
-          <li><a href="#skills"> <span>Habilidades</span></a></li>
-          <li><a href="https://drive.google.com/file/d/1g14usUos8zd0Ma1ZNJJjPpqKmOqmipvI/view?usp=sharing" target="_blank"> <span>Currículo</span></a></li>
-          <li><a href="#contacts"> <span>Contato</span></a></li>
+          <li><a href="#education"><span>Formação</span></a></li>
+          <li><a href="#experience"><span>Experiência</span></a></li>
+          <li><a href="#portfolio"><span>Projetos</span></a></li>
+          <li><a href="#skills"><span>Habilidades</span></a></li>
+          <li><a href="https://drive.google.com/file/d/1g14usUos8zd0Ma1ZNJJjPpqKmOqmipvI/view?usp=sharing" target="_blank"><span>Currículo</span></a></li>
+          <li><a href="#contacts"><span>Contato</span></a></li>
         </ul>
-      </nav><!-- .nav-menu -->
+      </nav>
 
       <div class="social-links">
-          <a href="https://www.linkedin.com/in/gustavoaquinup2005/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-          <a href="https://github.com/ICE3BR" target="_blank" class="github"><i class="bx bxl-github"></i></a>
-          <a href="mailto:gustavoaquinup@gmail.com" target="_blank" class="google"><i class="bx bxl-google"></i></a>
-
+        <a href="https://www.linkedin.com/in/gustavoaquinup2005/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://github.com/ICE3BR" target="_blank" class="github"><i class="bx bxl-github"></i></a>
+        <a href="mailto:gustavoaquinup@gmail.com" target="_blank" class="google"><i class="bx bxl-google"></i></a>
       </div>
 
     </div>
-  </header><!-- End Header -->
+
+    <!-- Coluna direita: elemento decorativo -->
+    <div class="hero-decorative d-none d-xl-block">
+      <div class="hero-code-block">
+        <div class="hero-code-dots">
+          <span></span><span></span><span></span>
+        </div>
+        <pre class="hero-code-content"><code><span class="c"># Gustavo Quinup — Dev</span>
+<span class="k">from</span> skills <span class="k">import</span> React, Python, AI
+
+<span class="k">def</span> <span class="fn">build_solution</span>(problem):
+    tools <span class="o">=</span> [React, Python, AI]
+    <span class="k">return</span> <span class="fn">optimize</span>(problem, tools)
+
+result <span class="o">=</span> <span class="fn">build_solution</span>(
+    <span class="s">"MagaluPay"</span>
+)
+<span class="c"># → solution deployed ✓</span><span class="code-cursor"></span></code></pre>
+      </div>
+    </div>
+
+  </div>
+</header><!-- End Header -->
 
   <!-- ======= About Section ======= -->
   <section id="about" class="about">
@@ -198,7 +235,7 @@
         <div class="col-lg-12" data-aos="fade-up" style="display: inline-block;">
 
             <div class="col-md-4 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style="padding:0px 0px;padding-bottom: 5px;display: inline-block;">
-              <img src="assets/img/education/logo-anhanguera_horizontal.webp" class="img-fluid" alt="Universidade Anhanguera">
+              <img src="assets/img/education/logo-anhanguera_horizontal.webp" class="img-fluid" alt="Universidade Anhanguera" loading="lazy">
               <p style="text-align:left;color:#fff;padding: 5px 10px;"><em>Bacharelado em Engenharia da Computação</em></p>
               <h5 style="text-align:left;padding: 0px 10px;">Janeiro 2022 – Previsão 2026 <span style="color:#12d640">(9º Semestre)</span></h5>
               <h6 style="text-align:left;color:#fff;padding: 0px 10px;">Disciplinas Relevantes</h6>
@@ -211,7 +248,7 @@
               </ul>
             </div>
             <div class="col-md-4 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style="padding:0px 0px;padding-bottom: 5px;display: inline-block;">
-              <img src="assets/img/education/colegio_dominante.png" class="img-fluid" alt="Colégio Dominante">
+              <img src="assets/img/education/colegio_dominante.png" class="img-fluid" alt="Colégio Dominante" loading="lazy">
               <p style="text-align:left;color:#fff;padding: 5px 10px;"><em>Ensino Médio Completo</em></p>
               <h5 style="text-align:left;padding: 0px 10px;">Janeiro 2019 – Dezembro 2021</h5>
             </div>
@@ -228,9 +265,11 @@
 
       <div class="row portfolio-container" style="position: relative; height: 437.75px;">
 
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app" style="position: absolute; left: 0px; top: 0px;">
+        <!-- Azure AI -->
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app cert-azure">
           <div class="portfolio-wrap">
-            <img src="assets/img/certification/dio_logo.png" class="img-fluid" alt="DIO">
+            <img src="assets/img/certification/dio_logo.png" class="img-fluid" alt="DIO" loading="lazy">
+            <div class="cert-label">Azure AI</div>
             <div class="portfolio-info">
               <h4>Azure AI</h4>
               <div class="portfolio-links">
@@ -240,9 +279,11 @@
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app" style="position: absolute; left: 370px; top: 0px;">
+        <!-- Banco de Dados -->
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app cert-db">
           <div class="portfolio-wrap">
-            <img src="assets/img/certification/dio_logo.png" class="img-fluid" alt="DIO">
+            <img src="assets/img/certification/dio_logo.png" class="img-fluid" alt="DIO" loading="lazy">
+            <div class="cert-label">Banco de Dados</div>
             <div class="portfolio-info">
               <h4>Banco de Dados</h4>
               <div class="portfolio-links">
@@ -252,9 +293,11 @@
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 portfolio-item filter-project" style="position: absolute; left: 370px; top: 218.875px;">
+        <!-- Machine Learning com Python -->
+        <div class="col-lg-4 col-md-6 portfolio-item filter-project cert-ml">
           <div class="portfolio-wrap">
-            <img src="assets/img/certification/dio_logo.png" class="img-fluid" alt="DIO">
+            <img src="assets/img/certification/dio_logo.png" class="img-fluid" alt="DIO" loading="lazy">
+            <div class="cert-label">Machine Learning com Python</div>
             <div class="portfolio-info">
               <h4>Machine Learning com Python</h4>
               <div class="portfolio-links">
@@ -343,9 +386,9 @@
       <div class="row portfolio-container">
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <center><h4>IA Data Analysis</h4></center>
+          <div class="text-center"><h4>IA Data Analysis</h4></div>
           <div class="portfolio-wrap">
-            <img src="assets/img/project/gan.jpg" class="img-fluid" alt="">
+            <img src="assets/img/project/gan.jpg" class="img-fluid" alt="" loading="lazy">
             <div class="portfolio-info">
               
               <div class="portfolio-links">
@@ -356,9 +399,9 @@
         </div>
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <center><h4>Chatbot IA</h4></center>
+          <div class="text-center"><h4>Chatbot IA</h4></div>
           <div class="portfolio-wrap">
-            <img src="assets/img/project/resume.jpg" class="img-fluid" alt="">
+            <img src="assets/img/project/resume.jpg" class="img-fluid" alt="" loading="lazy">
             <div class="portfolio-info">
               
               <div class="portfolio-links">
@@ -369,9 +412,9 @@
         </div>
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <center><h4>Downloader de Vídeos</h4></center>
+          <div class="text-center"><h4>Downloader de Vídeos</h4></div>
           <div class="portfolio-wrap">
-            <img src="assets/img/project/musicplayer.jpg" class="img-fluid" alt="">
+            <img src="assets/img/project/musicplayer.jpg" class="img-fluid" alt="" loading="lazy">
             <div class="portfolio-info">
               
               <div class="portfolio-links">
@@ -382,9 +425,9 @@
         </div>
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <center><h4>Gerador de QR Code</h4></center>
+          <div class="text-center"><h4>Gerador de QR Code</h4></div>
           <div class="portfolio-wrap">
-            <img src="assets/img/project/recommender.jpg" class="img-fluid" alt="">
+            <img src="assets/img/project/recommender.jpg" class="img-fluid" alt="" loading="lazy">
             <div class="portfolio-info">
               
               <div class="portfolio-links">
@@ -395,9 +438,9 @@
         </div>
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-project">
-          <center><h4>Busca CEP</h4></center>
+          <div class="text-center"><h4>Busca CEP</h4></div>
           <div class="portfolio-wrap">
-            <img src="assets/img/project/iras.jpeg" class="img-fluid" alt="">
+            <img src="assets/img/project/iras.jpeg" class="img-fluid" alt="" loading="lazy">
             <div class="portfolio-info">
               <div class="portfolio-links">
                 <a href="projects/searchcep.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Detalhes do Projeto"><i class="bx bx-info-circle"></i></a>
@@ -407,9 +450,9 @@
         </div>
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-project">
-          <center><h4>Processador de Imagens</h4></center>
+          <div class="text-center"><h4>Processador de Imagens</h4></div>
           <div class="portfolio-wrap">
-            <img src="assets/img/project/vdg.jpg" class="img-fluid" alt="">
+            <img src="assets/img/project/vdg.jpg" class="img-fluid" alt="" loading="lazy">
             <div class="portfolio-info">
               <div class="portfolio-links">
                 <a href="projects/imageprocessor.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Detalhes do Projeto"><i class="bx bx-info-circle"></i></a>
@@ -419,9 +462,9 @@
         </div>
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <center><h4>Analisador de Documentos</h4></center>
+          <div class="text-center"><h4>Analisador de Documentos</h4></div>
           <div class="portfolio-wrap">
-            <img src="assets/img/project/ml.jpg" class="img-fluid" alt="">
+            <img src="assets/img/project/ml.jpg" class="img-fluid" alt="" loading="lazy">
             <div class="portfolio-info">
               <div class="portfolio-links">
                 <a href="projects/documentanalyzer.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Detalhes do Projeto"><i class="bx bx-info-circle"></i></a>
@@ -431,9 +474,9 @@
         </div>
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-project">
-          <center><h4>Monitor de Preços</h4></center>
+          <div class="text-center"><h4>Monitor de Preços</h4></div>
           <div class="portfolio-wrap">
-            <img src="assets/img/project/gan.jpg" class="img-fluid" alt="">
+            <img src="assets/img/project/gan.jpg" class="img-fluid" alt="" loading="lazy">
             <div class="portfolio-info">
               <div class="portfolio-links">
                 <a href="projects/lowpriceservice.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Detalhes do Projeto"><i class="bx bx-info-circle"></i></a>
@@ -443,9 +486,9 @@
         </div>
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <center><h4>Legal-HUB</h4></center>
+          <div class="text-center"><h4>Legal-HUB</h4></div>
           <div class="portfolio-wrap">
-            <img src="assets/img/project/ml.jpg" class="img-fluid" alt="Legal-HUB">
+            <img src="assets/img/project/ml.jpg" class="img-fluid" alt="Legal-HUB" loading="lazy">
             <div class="portfolio-info">
               <div class="portfolio-links">
                 <a href="projects/legalhub.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Detalhes do Projeto"><i class="bx bx-info-circle"></i></a>
@@ -455,9 +498,9 @@
         </div>
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <center><h4>Calculadora Previdenciária</h4></center>
+          <div class="text-center"><h4>Calculadora Previdenciária</h4></div>
           <div class="portfolio-wrap">
-            <img src="assets/img/project/resume.jpg" class="img-fluid" alt="Calculadora Previdenciária">
+            <img src="assets/img/project/resume.jpg" class="img-fluid" alt="Calculadora Previdenciária" loading="lazy">
             <div class="portfolio-info">
               <div class="portfolio-links">
                 <a href="projects/calculadora-prev.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Detalhes do Projeto"><i class="bx bx-info-circle"></i></a>
@@ -467,9 +510,9 @@
         </div>
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <center><h4>LLM Translate Extension</h4></center>
+          <div class="text-center"><h4>LLM Translate Extension</h4></div>
           <div class="portfolio-wrap">
-            <img src="assets/img/project/llm-translate.png" class="img-fluid" alt="LLM Translate Extension" style="object-fit:contain; background:#09203a;">
+            <img src="assets/img/project/llm-translate.png" class="img-fluid" alt="LLM Translate Extension" style="object-fit:contain; background:#09203a;" loading="lazy">
             <div class="portfolio-info">
               <div class="portfolio-links">
                 <a href="projects/llm-translate.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Detalhes do Projeto"><i class="bx bx-info-circle"></i></a>
@@ -488,25 +531,6 @@
 
   <!-- Start Skills Section -->
 
-  <style>
-    .skill-group { margin-top:12px; display:flex; flex-direction:column; gap:8px; }
-    .skill-tier { display:flex; align-items:center; gap:12px; border-radius:8px; padding:10px 14px; }
-    .skill-tier.adv { background:rgba(18,214,64,0.07);  border:1px solid rgba(18,214,64,0.2); }
-    .skill-tier.int { background:rgba(255,193,7,0.07);  border:1px solid rgba(255,193,7,0.2); }
-    .skill-tier.bas { background:rgba(108,117,125,0.07); border:1px solid rgba(108,117,125,0.2); }
-    .skill-tier-label { min-width:110px; flex-shrink:0; font-size:0.75rem; font-weight:700; text-transform:uppercase; letter-spacing:0.6px; padding-left:8px; white-space:nowrap; }
-    .skill-tier-label.adv { color:#12d640; border-left:3px solid #12d640; }
-    .skill-tier-label.int { color:#ffc107; border-left:3px solid #ffc107; }
-    .skill-tier-label.bas { color:#6c757d; border-left:3px solid #6c757d; }
-    .skill-tier-logos { display:flex; flex-wrap:wrap; align-items:center; gap:6px; min-width:0; overflow:hidden; }
-    .skill-tier-logos img { height:40px; max-width:130px; object-fit:contain; flex-shrink:0; }
-    @media (max-width:575px) {
-      .skill-tier { flex-direction:column; align-items:flex-start; gap:4px; }
-      .skill-tier-label { min-width:unset; }
-      .skill-tier-logos img { height:32px; max-width:100px; }
-    }
-  </style>
-
   <section id="skills" class="services">
     <div class="container">
       <div class="section-title">
@@ -520,24 +544,24 @@
               <div class="skill-tier adv">
                 <span class="skill-tier-label adv">Avançado</span>
                 <div class="skill-tier-logos">
-                  <img src="https://www.vectorlogo.zone/logos/python/python-horizontal.svg" alt="Python">
-                  <img src="https://www.vectorlogo.zone/logos/mysql/mysql-horizontal.svg" alt="MySQL/MariaDB">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg" alt="Python">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" alt="MySQL/MariaDB">
                 </div>
               </div>
               <div class="skill-tier int">
                 <span class="skill-tier-label int">Intermediário</span>
                 <div class="skill-tier-logos">
-                  <img src="https://www.vectorlogo.zone/logos/javascript/javascript-ar21.svg" alt="JavaScript">
-                  <img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-ar21.svg" alt="HTML5">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS3" style="max-width:40px;">
-                  <img src="https://www.vectorlogo.zone/logos/postgresql/postgresql-ar21.svg" alt="PostgreSQL">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" alt="HTML5">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" alt="CSS3">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg" alt="PostgreSQL">
                 </div>
               </div>
               <div class="skill-tier bas">
                 <span class="skill-tier-label bas">Básico</span>
                 <div class="skill-tier-logos">
-                  <img src="https://www.vectorlogo.zone/logos/mongodb/mongodb-ar21.svg" alt="MongoDB">
-                  <img src="https://www.vectorlogo.zone/logos/dotnet/dotnet-ar21.svg" alt=".NET">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg" alt="MongoDB">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg" alt=".NET">
                 </div>
               </div>
             </div>
@@ -548,24 +572,24 @@
               <div class="skill-tier adv">
                 <span class="skill-tier-label adv">Avançado</span>
                 <div class="skill-tier-logos">
-                  <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-ar21.svg" alt="Git">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original-wordmark.svg" alt="Git">
                   <img src="assets/img/openai-vector.svg" alt="OpenAI">
-                  <img src="https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-ar21.svg" alt="AWS">
-                  <img src="https://www.vectorlogo.zone/logos/linux/linux-ar21.svg" alt="Linux">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" alt="Linux">
                 </div>
               </div>
               <div class="skill-tier int">
                 <span class="skill-tier-label int">Intermediário</span>
                 <div class="skill-tier-logos">
-                  <img src="https://www.vectorlogo.zone/logos/docker/docker-ar21.svg" alt="Docker">
-                  <img src="https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-ar21.svg" alt="Azure">
-                  <img src="https://www.vectorlogo.zone/logos/jupyter/jupyter-ar21.svg" alt="Jupyter">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original-wordmark.svg" alt="Docker">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original-wordmark.svg" alt="Azure">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jupyter/jupyter-original-wordmark.svg" alt="Jupyter">
                 </div>
               </div>
               <div class="skill-tier bas">
                 <span class="skill-tier-label bas">Básico</span>
                 <div class="skill-tier-logos">
-                  <img src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-ar21.svg" alt="Google Cloud">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original-wordmark.svg" alt="Google Cloud">
                 </div>
               </div>
             </div>
@@ -576,21 +600,25 @@
               <div class="skill-tier adv">
                 <span class="skill-tier-label adv">Avançado</span>
                 <div class="skill-tier-logos">
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original-wordmark.svg" alt="FastAPI" style="max-width:50px; height:44px;">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original-wordmark.svg" alt="FastAPI">
                 </div>
               </div>
               <div class="skill-tier int">
                 <span class="skill-tier-label int">Intermediário</span>
                 <div class="skill-tier-logos">
-                  <img src="https://www.vectorlogo.zone/logos/djangoproject/djangoproject-ar21.svg" alt="Django">
-                  <img src="https://www.vectorlogo.zone/logos/getbootstrap/getbootstrap-ar21.svg" alt="Bootstrap">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="Scikit-learn" style="max-width:70px;">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain-wordmark.svg" alt="Django" style="filter: brightness(0) invert(1);">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original-wordmark.svg" alt="Bootstrap">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg" alt="Scikit-learn" style="max-width:70px;">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg" alt="React.js">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original-wordmark.svg" alt="Next.js" style="filter: invert(1);">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="TypeScript">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original-wordmark.svg" alt="Tailwind CSS">
                 </div>
               </div>
               <div class="skill-tier bas">
                 <span class="skill-tier-label bas">Básico</span>
                 <div class="skill-tier-logos">
-                  <img src="https://www.vectorlogo.zone/logos/nodejs/nodejs-horizontal.svg" alt="Node.js">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain-wordmark.svg" alt="Node.js">
                 </div>
               </div>
             </div>
@@ -723,6 +751,31 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- AOS Init -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script>AOS.init({ duration: 600, once: true, offset: 50 });</script>
+
+  <!-- Scroll to Top -->
+  <button id="scroll-top" aria-label="Voltar ao topo">
+    <i class="bx bx-up-arrow-alt"></i>
+  </button>
+
+  <script>
+    (function() {
+      var btn = document.getElementById('scroll-top');
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 300) {
+          btn.classList.add('visible');
+        } else {
+          btn.classList.remove('visible');
+        }
+      });
+      btn.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    })();
+  </script>
 
 </body>
 

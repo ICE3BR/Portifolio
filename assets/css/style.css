@@ -1260,11 +1260,11 @@ section .container {
 .skill-tier-label.int { color: #ffc107; border-left: 3px solid #ffc107; }
 .skill-tier-label.bas { color: #6c757d; border-left: 3px solid #6c757d; }
 .skill-tier-logos { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; min-width: 0; overflow: hidden; }
-.skill-tier-logos img { height: 40px; max-width: 130px; object-fit: contain; flex-shrink: 0; }
+.skill-tier-logos img { height: 52px; max-width: 160px; object-fit: contain; flex-shrink: 0; }
 @media (max-width: 575px) {
   .skill-tier { flex-direction: column; align-items: flex-start; gap: 4px; }
   .skill-tier-label { min-width: unset; }
-  .skill-tier-logos img { height: 32px; max-width: 100px; }
+  .skill-tier-logos img { height: 42px; max-width: 120px; }
 }
 
 /*--------------------------------------------------------------
